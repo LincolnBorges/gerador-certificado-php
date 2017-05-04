@@ -11,9 +11,9 @@ Muitas vezes precisamos gerar um PDF com imagem no fundo, seja ele algum convite
 
 ## Créditos
 
-<a href="http://www.lnborges.com.br/" target="_blank">Lincoln Borges</a>
-<a href="https://github.com/PHPMailer/PHPMailer" target="_blank">PHPMailer</a>
-<a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+* <a href="http://www.lnborges.com.br/" target="_blank">Lincoln Borges</a>
+* <a href="https://github.com/PHPMailer/PHPMailer" target="_blank">PHPMailer</a>
+* <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
 
 ## Licença
 
