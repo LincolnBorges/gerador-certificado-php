@@ -12,12 +12,10 @@
       <div class="container">
          <form class="form-horizontal" action="gerar_certificado/gerador.php" method="post"  id="contact_form">
             <fieldset>
-               <!-- Form Name -->
                <center>
                   <h1>Gere seu certificado online</h1>
                </center>
                <p>&nbsp;</p>
-               <!-- Text input-->
                <div class="form-group">
                   <label class="col-md-4 control-label">Nome</label>  
                   <div class="col-md-4 inputGroupContainer">
@@ -27,7 +25,6 @@
                      </div>
                   </div>
                </div>
-               <!-- Text input-->
                <div class="form-group">
                   <label class="col-md-4 control-label">E-Mail</label>  
                   <div class="col-md-4 inputGroupContainer">
@@ -47,7 +44,6 @@
                   </div>
                </div>
      
-      <!-- Button -->
       <div class="form-group">
       <label class="col-md-4 control-label"></label>
       <div class="col-md-4">
@@ -74,7 +70,6 @@
       <script>
       $(document).ready(function() {
           $('#contact_form').bootstrapValidator({
-              // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
               feedbackIcons: {
                   valid: 'glyphicon glyphicon-ok',
                   invalid: 'glyphicon glyphicon-remove',
