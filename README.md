@@ -1,20 +1,27 @@
-# Gerador de certificado em PHP para treinamentos / workshops / cursos e etc.
+# Slim Framework 3 Skeleton Application
 
-Muitas vezes precisamos gerar um PDF com imagem no fundo, seja ele algum convite, algum comprovante e demais situações. Nesse exemplo vai ser gerado um certificado de workshop, claro que aplicando o mesmo principio pode ser usado para qualquer fim.
+Use this skeleton application to quickly setup and start working on a new Slim Framework 3 application. This application uses the latest Slim 3 with the PHP-View template renderer. It also uses the Monolog logger.
 
-## Instalação / Execução
+This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
 
-1. Faça download e jogue todos os arquivos no servidor
-2. Execute o index.php
-3. Preencha o formulário e clique no botão de gerar certificado
+## Install the Application
 
+Run this command from the directory in which you want to install your new Slim Framework application.
 
-## Créditos
+    php composer.phar create-project slim/slim-skeleton [my-app-name]
 
-* <a href="http://www.lnborges.com.br/" target="_blank">Lincoln Borges</a>
-* <a href="https://github.com/PHPMailer/PHPMailer" target="_blank">PHPMailer</a>
-* <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
 
-## Licença
+* Point your virtual host document root to your new application's `public/` directory.
+* Ensure `logs/` is web writeable.
 
- MIT License
+To run the application in development, you can run these commands 
+
+	cd [my-app-name]
+	php composer.phar start
+
+Run this command in the application directory to run the test suite
+
+	php composer.phar test
+
+That's it! Now go build something cool.
