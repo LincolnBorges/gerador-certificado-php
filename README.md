@@ -1,27 +1,25 @@
-# Slim Framework 3 Skeleton Application
+# Gerador de Certificados em PHP para Treinamentos, Workshops, cursos e etc.
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 3 application. This application uses the latest Slim 3 with the PHP-View template renderer. It also uses the Monolog logger.
+Muitas vezes precisamos gerar um PDF com imagem no fundo, seja ele algum convite, algum comprovante e demais situações. Nesse exemplo vai ser gerado um certificado de workshop, claro que aplicando o mesmo principio pode ser usado para qualquer fim.
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+## Instalação / Execução
 
-## Install the Application
+1. Faça o `git clone` do repositório no seu computador;
+2. Instale os pacotes do composer executando o comando: `php composer.phar install`
+3. Execute o servidor embutido com o comando: `php composer.phar start`
+4. Abra o seu navegador preferido e insira o endereco: `http://localhost:8080`
 
-Run this command from the directory in which you want to install your new Slim Framework application.
+**NOTA:** você pode executar a aplicação também através de outros servidores WEB como: Apache ou NGINX;
 
-    php composer.phar create-project slim/slim-skeleton [my-app-name]
+## Créditos
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
+* <a href="http://www.lnborges.com.br/" target="_blank">Lincoln Borges (@LincolnBorges)</a>
+* <a href="http://www.yiiacademy.com.br/" target="_blank">Kilderson Sena (@dersonsena)</a>
+* <a href="https://github.com/PHPMailer/PHPMailer" target="_blank">PHPMailer</a>
+* <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+* <a href="https://www.slimframework.com/" target="_blank">Slim Framework</a>
+* <a href="http://www.fpdf.org/" target="_blank">FPDF</a>
 
-* Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writeable.
+## Licença
 
-To run the application in development, you can run these commands 
-
-	cd [my-app-name]
-	php composer.phar start
-
-Run this command in the application directory to run the test suite
-
-	php composer.phar test
-
-That's it! Now go build something cool.
+ MIT License
