@@ -22,3 +22,22 @@ $container['logger'] = function ($c) {
     $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['path'], $settings['level']));
     return $logger;
 };
+
+/**
+ * @var Slim\Container $c
+ * @return PHPMailer
+ */
+$container['phpmailer'] = function ($c) {
+    $mail = new PHPMailer();
+    $mail->SetFrom("certificado@lnborges.com.br", "Certificado");
+
+    return $mail;
+};
+
+/**
+ * @var Slim\Container $c
+ * @return FPDF
+ */
+$container['fpdf'] = function ($c) {
+    return new FPDF();
+};
