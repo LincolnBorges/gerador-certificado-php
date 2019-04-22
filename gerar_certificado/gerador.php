@@ -7,7 +7,7 @@ require('PHPMailer/class.phpmailer.php');
 
 // --------- Variáveis do Formulário ----- //
 $email    = $_POST['email'];
-$nome     = $_POST['nome'];
+$nome     = utf8_decode($_POST['nome']);
 $cpf      = $_POST['cpf'];
 
 // --------- Variáveis que podem vir de um banco de dados por exemplo ----- //
@@ -70,7 +70,7 @@ $messageBody = "Olá $nome<br><br>É com grande prazer que entregamos o seu cert
 $mail = new PHPMailer();
 $mail->SetFrom("certificado@lnborges.com.br", "Certificado");
 $mail->Subject    = $subject;
-$mail->MsgHTML(utf8_decode($messageBody));	
+$mail->MsgHTML(utf8_decode($messageBody));
 $mail->AddAddress($email); 
 $mail->addStringAttachment($pdfdoc, 'certificado.pdf');
 $mail->Send();
